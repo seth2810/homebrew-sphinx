@@ -1,2 +1,6 @@
 # brew-sphinx
-Old sphinx homebrew formulas
+
+```
+brew tap vs-adm/brew-sphinx
+brew install vs-adm/sphinx/sphinx206
+```
