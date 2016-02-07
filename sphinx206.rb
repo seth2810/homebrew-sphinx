@@ -24,7 +24,7 @@ class Sphinx206 < Formula
   # http://snowball.tartarus.org/
   resource 'stemmer' do
     url 'http://snowball.tartarus.org/dist/libstemmer_c.tgz'
-    sha1 '9b0f120a68a3c688b2f5a8d0f681620465c29d38'
+    sha1 '1ac6bb16e829e9f3a58f62c27047c26784975aa1'
   end
 
   fails_with :llvm do
@@ -43,7 +43,7 @@ class Sphinx206 < Formula
     inreplace "libstemmer_c/Makefile.in",
               "stem_ISO_8859_1_hungarian",
               "stem_ISO_8859_2_hungarian"
-    
+
     args = %W[--prefix=#{prefix}
               --disable-dependency-tracking
               --localstatedir=#{var}
